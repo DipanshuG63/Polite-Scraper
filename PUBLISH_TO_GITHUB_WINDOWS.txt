@@ -1,0 +1,41 @@
+PUBLISH W5 A9 AS A SEPARATE PUBLIC GITHUB REPOSITORY
+
+IMPORTANT: Repository creation is not available to the assistant's current GitHub connector.
+The offline project is fully prepared and contains a real Git history of 7 stage commits.
+
+ONE-TIME ACTION IN YOUR BROWSER:
+  1. Open https://github.com/new (signed into GitHub as DipanshuG63).
+  2. Repository name: polite-scraper
+  3. Visibility: Public
+  4. IMPORTANT: DO NOT tick Add README, .gitignore, or license (keep empty).
+  5. Click Create repository.
+
+THEN IN WINDOWS:
+  1. Extract polite-scraper-PUSH-READY.zip. Extract normally, including hidden .git folder.
+  2. Open the extracted polite-scraper project folder (the one containing README.md, src/, .git/).
+  3. Right-click empty space and select Open Git Bash here.
+  4. Run exactly:
+
+       git remote add origin https://github.com/DipanshuG63/polite-scraper.git
+       git push -u origin main
+
+  5. If origin already exists, use:
+
+       git remote set-url origin https://github.com/DipanshuG63/polite-scraper.git
+       git push -u origin main
+
+  6. GitHub submission link AFTER SUCCESSFUL PUSH:
+       https://github.com/DipanshuG63/polite-scraper
+
+To confirm 7+ commits: git log --oneline
+
+For live scraping on Windows, install Python and run in this folder:
+       py -m pip install -r requirements.txt
+       py -m src.classify
+       py -m src.main
+       py -m src.main
+       py -m src.main --include-broken-test
+       py -m pytest -q
+
+NOTE: A successful GitHub push and a fresh live scrape still require your computer
+and your GitHub login. These have NOT already been completed in this environment.
