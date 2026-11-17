@@ -1,0 +1,7 @@
+{
+  "note": "Illustrative sample shape only. Run the scraper locally for the real live counts.",
+  "catalogue_scope": 3,
+  "expected_unique_book_urls": 60,
+  "expected_valid_records": 60,
+  "expected_failed_pages": 0
+}

@@ -1,0 +1,12 @@
+{
+  "start_time": "2026-10-06T21:24:49.907609+00:00",
+  "duration_seconds": 0.526,
+  "pages_fetched": 0,
+  "cache_hits": 63,
+  "valid_records": 60,
+  "invalid_records": 0,
+  "failed_pages": 0,
+  "failed_urls": [],
+  "catalogue_scope": 3,
+  "unique_book_urls": 60
+}
