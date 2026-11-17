@@ -120,6 +120,8 @@ def test_exported_60_record_snapshot_is_valid_and_unique():
         assert str(model.product_url).startswith(PREFIX)
         assert model.price_gbp >= 0
         assert set(book) == set(type(model).model_fields)
+        assert "Â£" not in book["price_text"]
+        assert "â\x80" not in (book.get("description") or "")
 
 
 def test_exfiltration_host_is_not_allowed(tmp_path):

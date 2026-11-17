@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOKS = ROOT / "output" / "books.json"
-BROKEN = re.compile(r"â[\x80-\x9f][\x80-\x9f]|Ã[\x80-\xbf]|Â[£\xa0]")
+BROKEN = re.compile(r"â[\x80-\x9f][\x80-\xbf]|Ã[\x80-\xbf]|Â[£\xa0]")
 
 
 def repair(text: str | None) -> str | None:
