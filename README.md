@@ -123,4 +123,8 @@ The website may change selectors or go offline. The pipeline reports those failu
 | 5 — Survive/report | Per-page failure isolation, 404 exercise and run report |
 | 6 — Publish | This README, tests, evidence and publishing instructions |
 
-`git log --oneline` shows all seven incremental stage commits in the prepared project ZIP's Git history. The ZIP has a real `.git` directory; follow `PUBLISH_TO_GITHUB_WINDOWS.txt` after creating the **separate** public `polite-scraper` repository in your GitHub account.
+`git log --oneline` shows all seven staged commits plus the follow-up bugfix and publishing-helper commits in the prepared ZIP's Git history. The ZIP has a real `.git` directory; follow `PUBLISH_TO_GITHUB_WINDOWS.txt` after creating the **separate** public `polite-scraper` repository in your GitHub account.
+
+### GitHub publishing on Windows
+
+Create an **empty public** GitHub repository named `polite-scraper` (no auto-created README), extract the supplied complete project ZIP, and **double-click `PUSH_TO_GITHUB.bat`**. This helper configures `origin` and pushes the preserved Git history to the separate repository. If Git is not on the Windows PATH, use the equivalent Git Bash commands in `PUBLISH_TO_GITHUB_WINDOWS.txt`. The repository has **not** already been created or pushed by the offline preparation environment.

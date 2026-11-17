@@ -13,8 +13,8 @@ ONE-TIME ACTION IN YOUR BROWSER:
 THEN IN WINDOWS:
   1. Extract polite-scraper-PUSH-READY.zip. Extract normally, including hidden .git folder.
   2. Open the extracted polite-scraper project folder (the one containing README.md, src/, .git/).
-  3. Right-click empty space and select Open Git Bash here.
-  4. Run exactly:
+  3. EASIEST: double-click PUSH_TO_GITHUB.bat in that folder.
+  4. ALTERNATIVE: Right-click empty space and select Open Git Bash here, then run:
 
        git remote add origin https://github.com/DipanshuG63/polite-scraper.git
        git push -u origin main
